@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <title>Nunito Font Example</title>
+  <style>
+    /* Apply to body to center everything and make the background transparent */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: transparent; /* Transparent background for the body */
+    }
+
+    /* Make the background of the form section transparent */
+    .story {
+      background-color: transparent; /* Set background to transparent */
+      padding: 30px;
+      text-align: center; /* Center text inside the container */
+    }
+
+    #groupfinder {
+      text-align: center;
+    }
+
+    /* Apply styles for form elements with transparent background */
+    .form-field input {
+      font-family: 'Nunito', sans-serif;
+      font-size: 18px;
+      padding: 12px;
+      height: 45px;
+      margin: 10px 0;
+      color: #7413dc;
+      border: 2px solid #7413dc;
+      width: 200px;
+      box-sizing: border-box;
+      text-align: center; /* Center text inside the input box */
+      background-color: transparent; /* Make input background transparent */
+    }
+
+    .submitbutton {
+      font-family: 'Nunito', sans-serif;
+      font-size: 18px;
+      padding: 12px 20px;
+      height: 45px;
+      color: white;
+      border: 2px solid #7413dc;
+      cursor: pointer;
+      width: 200px; /* Same width as input field */
+      box-sizing: border-box;
+      text-align: center;
+      background-color: #7413dc;
+    }
+
+    /* Optional: Hover effect for button */
+    .submitbutton:hover {
+      background-color: transparent;
+      color: white;
+    }
+
+    input::placeholder {
+      color: #7413dc;
+    }
+  </style>
+</head>
+<body>
+  <div class="story col5">
+    <div id="groupfinder">
+      <h3 style="color:#7413dc; font-family: 'Nunito', sans-serif; font-weight: 700;" class="findgroup">Find a local group</h3>
+      <form action="https://scouts.org.uk/groups/?loc=" method="get" target="_blank">
+        <div class="form-field">
+          <input type="text" name="loc" placeholder="Postcode or location">
+          <input class="submitbutton" name="Search" type="Submit" value="Go">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
